@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/c286026a79.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <!-- <img src="teacherlogo.png" alt=""> -->
+            <i class="fa-solid fa-filter"></i>
+            <h2>Filters</h2>
+        </div>
+
+        <!-- <div class="items">
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Engineering and Technology</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Architecture</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Commerce and Management</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Arts,Humanities and Social sciences</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Dashboard</a></li>
+        </div> -->
+        <div class="items">
+            <li><a href="#">Engineering and Technology</a><input type="checkbox"></li>
+            <li><a href="#">Architecture</a><input type="checkbox"></li>
+            <li><a href="#">Commerce and Management Studies</a><input type="checkbox"></li>
+            <li><a href="#">Arts,Humanities and Social Sciences</a><input type="checkbox"></li>
+            <li><a href="#">Science and Technology</a><input type="checkbox"></li>
+            <li><a href="#">Law</a><input type="checkbox"></li>
+            <li><a href="#">Arts and Indic Studies</a><input type="checkbox"></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menubtn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <i class="fa-solid fa-house"><br><a href="#" class="home">Go to home</a></i>
+                <!-- <img src="kakashi-hatake.webp" alt=""> -->
+                <!-- <a href="#" class="home">Go to home</a> -->
+            </div>
+        </div>
+
+        <h3 class="iname">
+            Search for Experts
+        </h3>
+
+        <div class="values">
+
+            <div class="valbox">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3>8,000</h3>
+                    <span>Total Users</span>
+                </div>
+            </div> 
+
+            <div class="valbox">
+                <i class="fa-solid fa-file"></i>
+                <div>
+                    <h3>220</h3>
+                    <span>Projects</span>
+                </div>
+            </div>
+
+            <div class="valbox">
+                <i class="fa-solid fa-upload"></i>
+                <div>
+                    <h3>2000</h3>
+                    <span>Publications</span>
+                </div>
+            </div>
+
+            <div class="valbox">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <div>
+                    <h3>2,00,000 Rs</h3>
+                    <span>Fund Raised</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Title</td>
+                        <td>Status</td>
+                        <td>Role</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="people">
+                            <img src="itachi.webp" alt="">
+                            <div class="peopledesc">
+                                <h5>John</h5>
+                                <p>john@example.com</p>
+                            </div>
+                        </td>
+
+                        <td class="peopledesg">
+                            <h5>Faculty</h5>
+                            <p>Associate Professor</p>
+                        </td>
+
+                        <td class="active">
+                            <p>active</p>
+                        </td>
+
+                        <td class="Department">
+                            <p>CSE</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="itachi.webp" alt="">
+                            <div class="peopledesc">
+                                <h5>John</h5>
+                                <p>john@example.com</p>
+                            </div>
+                        </td>
+
+                        <td class="peopledesg">
+                            <h5>Faculty</h5>
+                            <p>AndrAssociate Professor</p>
+                        </td>
+
+                        <td class="active">
+                            <p>active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>CSE</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="itachi.webp" alt="">
+                            <div class="peopledesc">
+                                <h5>John</h5>
+                                <p>john@example.com</p>
+                            </div>
+                        </td>
+
+                        <td class="peopledesg">
+                            <h5>Faculty</h5>
+                            <p>Associate Professor</p>
+                        </td>
+
+                        <td class="active">
+                            <p>active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>CSE</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="itachi.webp" alt="">
+                            <div class="peopledesc">
+                                <h5>John</h5>
+                                <p>john@example.com</p>
+                            </div>
+                        </td>
+
+                        <td class="peopledesg">
+                            <h5>Faculty</h5>
+                            <p>Associate Professor</p>
+                        </td>
+
+                        <td class="active">
+                            <p>active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>CSE</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="people">
+                            <img src="itachi.webp" alt="">
+                            <div class="peopledesc">
+                                <h5>John</h5>
+                                <p>john@example.com</p>
+                            </div>
+                        </td>
+
+                        <td class="peopledesg">
+                            <h5>Faculty</h5>
+                            <p>Associate Professor</p>
+                        </td>
+
+                        <td class="active">
+                            <p>active</p>
+                        </td>
+
+                        <td class="role">
+                            <p>CSE</p>
+                        </td>
+
+                        <td class="edit">
+                            <a href="#">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+    
+    <script>
+        $('#menubtn').click(function(){
+            $('#menu').toggleClass('active');
+        })
+    </script>
+</body>
+</html>
